@@ -12,5 +12,6 @@ before_script:
   - psql -c 'CREATE database todostestdb;' -U postgres
 script:
   - npm run test
+  - npm run coveralls
 notifications:
   email: false
