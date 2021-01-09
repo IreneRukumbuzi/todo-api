@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "sequelize db:migrate && nodemon --exec babel-node ./src/server.js",
-    "test": "cross-env NODE_ENV=test sequelize db:migrate sequelize db:seed:all && jest --config ./jest.config.json --coverage --forceExit --detectOpenHandles --maxWorkers=1 && cross-env NODE_ENV=test sequelize db:migrate:undo:all"
+    "test": "cross-env NODE_ENV=test sequelize db:migrate sequelize db:seed:all && jest --config ./jest.config.json --coverage --forceExit --detectOpenHandles --maxWorkers=1 && cross-env NODE_ENV=test sequelize db:migrate:undo:all",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [],
   "author": "",
@@ -29,7 +30,9 @@
     "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/runtime": "^7.12.5",
+    "@istanbuljs/nyc-config-babel": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-istanbul": "^6.0.0",
     "coveralls": "^3.1.0",
     "cross-env": "^7.0.3",
     "eslint": "^7.17.0",
