@@ -11,4 +11,4 @@ This app allows users to create an account, log in and then Create, Read, Update
 
 #### Coverage
 
-[![Coverage Status](https://coveralls.io/repos/github/IreneRukumbuzi/todo-api/badge.svg?branch=main)](https://coveralls.io/github/IreneRukumbuzi/todo-api?branch=main)
+https://travis-ci.com/IreneRukumbuzi/todo-api.svg?branch=main
