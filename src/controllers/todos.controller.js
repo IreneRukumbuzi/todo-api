@@ -89,9 +89,9 @@ class TodoController {
       await Todo.destroy({where: { id: todoId, ownerId: id } })
         .then((data) => {
           if(data){
-            return res.status(204).send({message: 'Todo item deleted successfully'})
+            return res.status(202).send({message: 'Todo item deleted successfully'})
           }
-          return res.status(401).send({ message: 'no todo item found'})
+          return res.status(204).send({ message: 'no todo item found'})
         })
         .catch(() => {
           return res.status(409).send({message: 'item already deleted'})

@@ -5,8 +5,6 @@ import router from './routes/index';
 
 const App = express();
 
-const Port = process.env.Port || 5000;
-
 App.use(bodyParser.json());
 App.use(bodyParser.urlencoded({ extended: false }));
 
@@ -18,6 +16,5 @@ App.get('/', (req, res) => {
   res.status(200).send({ message: 'Welcome to my Todo API' });
 });
 
-App.listen(Port, () => {
-  console.log(`App listening on Port ${Port}...`);
-});
+
+export default App;
