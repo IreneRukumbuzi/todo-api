@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "sequelize db:migrate && nodemon --exec babel-node ./src/server.js",
-    "test": "cross-env NODE_ENV=test sequelize db:migrate sequelize db:seed:all && jest --config ./jest.config.json --coverage --forceExit --detectOpenHandles --maxWorkers=1 && cross-env NODE_ENV=test sequelize db:migrate:undo:all",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "test": "cross-env NODE_ENV=test sequelize db:migrate sequelize db:seed:all && jest --config ./jest.config.json --coverage --forceExit --detectOpenHandles --maxWorkers=1 && cat ./coverage/lcov.info | coveralls && cross-env NODE_ENV=test sequelize db:migrate:undo:all"
   },
   "keywords": [],
   "author": "",
