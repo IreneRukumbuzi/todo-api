@@ -11,4 +11,4 @@ This app allows users to create an account, log in and then Create, Read, Update
 
 #### Coverage
 
-https://travis-ci.com/IreneRukumbuzi/todo-api.svg?branch=main
+[![Build Status](https://travis-ci.com/IreneRukumbuzi/todo-api.svg?branch=main)](https://travis-ci.com/IreneRukumbuzi/todo-api)
