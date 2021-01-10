@@ -5,6 +5,7 @@ This app allows users to create an account, log in and then Create, Read, Update
 ### Technologies used
 - Nodejs
 - Express
+- Authentication with JWT Tokens
 - Postgres
 - Jest(unit test)
 
